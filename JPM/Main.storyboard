@@ -43,7 +43,7 @@
                                 <rect key="frame" x="0.0" y="32" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="159" id="2o8-DJ-Oai" customClass="LaunchCell" customModule="JPM" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="159" id="2o8-DJ-Oai" customClass="LaunchCell">
                                         <rect key="frame" x="0.0" y="28" width="375" height="159"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2o8-DJ-Oai" id="W56-mJ-ffQ">
@@ -105,12 +105,12 @@
                                             <constraint firstItem="Jnn-gh-4uY" firstAttribute="leading" secondItem="2o8-DJ-Oai" secondAttribute="leading" constant="50" id="NEN-WP-9HH"/>
                                         </constraints>
                                         <connections>
-                                            <outlet property="flightNumberLabel" destination="Jnn-gh-4uY" id="P00-Rn-TJE"/>
-                                            <outlet property="launchDateLabel" destination="nU7-9b-KBJ" id="xt5-jX-rUJ"/>
-                                            <outlet property="launchSiteLabel" destination="XdG-Lx-2dY" id="XLB-iL-o5J"/>
-                                            <outlet property="launchYearLabel" destination="uDx-N7-QQR" id="8Jo-gy-lkO"/>
-                                            <outlet property="rocketNameLabel" destination="H9R-B1-O8J" id="PNH-AD-jTK"/>
-                                            <outlet property="rocketTypeLabel" destination="2yE-um-UMs" id="SUh-mI-nf2"/>
+                                            <outlet property="flightNumberLabel" destination="Jnn-gh-4uY" id="n7V-TQ-KfG"/>
+                                            <outlet property="launchDateLabel" destination="nU7-9b-KBJ" id="YkR-F1-G5H"/>
+                                            <outlet property="launchSiteLabel" destination="XdG-Lx-2dY" id="Wla-CB-EpZ"/>
+                                            <outlet property="launchYearLabel" destination="uDx-N7-QQR" id="63J-pL-LcN"/>
+                                            <outlet property="rocketNameLabel" destination="H9R-B1-O8J" id="dey-Lz-aGA"/>
+                                            <outlet property="rocketTypeLabel" destination="2yE-um-UMs" id="oYH-bs-wuP"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -128,12 +128,12 @@
                                             <navigationItem title="Refine Search" id="E0x-SU-zPG">
                                                 <barButtonItem key="leftBarButtonItem" title="Cancel" id="9mv-HR-Oak">
                                                     <connections>
-                                                        <action selector="cancelBarButtonPressed:" destination="B4T-yX-Uro" id="CL5-5Z-hhO"/>
+                                                        <action selector="cancelButtonPressed:" destination="B4T-yX-Uro" id="SGw-PK-sIZ"/>
                                                     </connections>
                                                 </barButtonItem>
                                                 <barButtonItem key="rightBarButtonItem" title="Apply" id="1jx-8e-L2o">
                                                     <connections>
-                                                        <action selector="applyButtonPressed:" destination="B4T-yX-Uro" id="EnW-VV-qS2"/>
+                                                        <action selector="applyButtonPressed:" destination="B4T-yX-Uro" id="3bh-a8-a58"/>
                                                     </connections>
                                                 </barButtonItem>
                                             </navigationItem>
@@ -161,7 +161,7 @@
                                             <!--2018-02-13 08:13:07 +0000-->
                                         </date>
                                         <connections>
-                                            <action selector="startDateChanged:" destination="B4T-yX-Uro" eventType="valueChanged" id="tGz-IQ-why"/>
+                                            <action selector="startDateChanged:" destination="B4T-yX-Uro" eventType="valueChanged" id="mKe-KW-gZm"/>
                                         </connections>
                                     </datePicker>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Final Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M4U-n3-fyn">
@@ -180,7 +180,7 @@
                                             <!--2018-02-13 08:13:07 +0000-->
                                         </date>
                                         <connections>
-                                            <action selector="finalDateChanged:" destination="B4T-yX-Uro" eventType="valueChanged" id="33O-da-DeF"/>
+                                            <action selector="endDateChanged:" destination="B4T-yX-Uro" eventType="valueChanged" id="ilw-Tl-2UV"/>
                                         </connections>
                                     </datePicker>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CLG-fJ-bhT">
@@ -192,7 +192,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="ASCIICapableNumberPad" returnKeyType="go" enablesReturnKeyAutomatically="YES"/>
                                         <connections>
-                                            <action selector="launchYearFilterChanged:" destination="B4T-yX-Uro" eventType="editingChanged" id="Wg7-6e-LoK"/>
+                                            <action selector="launchYearFilterChanged:" destination="B4T-yX-Uro" eventType="editingChanged" id="kbE-LI-2Tp"/>
                                             <outlet property="delegate" destination="B4T-yX-Uro" id="XHM-av-i2A"/>
                                         </connections>
                                     </textField>
@@ -233,7 +233,7 @@
                     <navigationItem key="navigationItem" title="Upcoming Launches" id="XYP-7D-XHc">
                         <barButtonItem key="rightBarButtonItem" title="Filter" id="Op5-kN-uB8">
                             <connections>
-                                <action selector="filterButtonPressed:" destination="B4T-yX-Uro" id="8pQ-Oh-k8E"/>
+                                <action selector="filterButtonPressed:" destination="B4T-yX-Uro" id="07y-bo-scX"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
