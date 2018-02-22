@@ -38,10 +38,10 @@
         urlString = [urlString stringByAppendingString:[NSString stringWithFormat:@"%@%@", LAUNCH_YEAR_URL, launchFilter]];
     }
     if (startDateFilter != nil) {
-        urlString = [urlString stringByAppendingString:[NSString stringWithFormat:@"%@%@", LAUNCH_YEAR_URL, startDateFilter]];
+        urlString = [urlString stringByAppendingString:[NSString stringWithFormat:@"%@%@", START_DATE_URL, startDateFilter]];
     }
     if (endDateFilter != nil) {
-        urlString = [urlString stringByAppendingString:[NSString stringWithFormat:@"%@%@", LAUNCH_YEAR_URL, endDateFilter]];
+        urlString = [urlString stringByAppendingString:[NSString stringWithFormat:@"%@%@", END_DATE_URL, endDateFilter]];
     }
     NSURL *url = [NSURL URLWithString:urlString];
     
@@ -54,7 +54,9 @@
             Launch *launchObject = [[Launch alloc] initWithData:data];
             [self.datasourceArray addObject:launchObject];
         }
-        [self.tableView reloadData];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.tableView reloadData];
+        });
         if (self.datasourceArray.count == 0) {
             [self noResultsAlert];
         }
