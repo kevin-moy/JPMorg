@@ -107,7 +107,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0A4DF907203E8DCF00C9DA75 /* Object */ = {
+		0A4DF907203E8DCF00C9DA75 /* Objects */ = {
 			isa = PBXGroup;
 			children = (
 				0AC35580203D01720039CCD4 /* Launch.h */,
@@ -115,7 +115,7 @@
 				0AC35583203D05ED0039CCD4 /* Rocket.h */,
 				0AC35584203D05ED0039CCD4 /* Rocket.m */,
 			);
-			path = Object;
+			path = Objects;
 			sourceTree = "<group>";
 		};
 		0A4DF908203E8DEF00C9DA75 /* ViewControllers */ = {
@@ -123,6 +123,7 @@
 			children = (
 				0AC35549203CFD890039CCD4 /* ViewController.h */,
 				0AC3554A203CFD890039CCD4 /* ViewController.m */,
+				0A4DF8FA203E39CD00C9DA75 /* Constants.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -132,7 +133,6 @@
 			children = (
 				0A4DF904203E8BE200C9DA75 /* NSString+DateString.h */,
 				0A4DF905203E8BE200C9DA75 /* NSString+DateString.m */,
-				0A4DF8FA203E39CD00C9DA75 /* Constants.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -167,7 +167,7 @@
 				0A4DF8FE203E41E300C9DA75 /* LaunchCell.h */,
 				0A4DF8FF203E41E300C9DA75 /* LaunchCell.m */,
 				0A4DF908203E8DEF00C9DA75 /* ViewControllers */,
-				0A4DF907203E8DCF00C9DA75 /* Object */,
+				0A4DF907203E8DCF00C9DA75 /* Objects */,
 				0A4DF909203E8E0500C9DA75 /* Utils */,
 				0AC35578203CFDA60039CCD4 /* Main.storyboard */,
 				0AC3554F203CFD890039CCD4 /* Assets.xcassets */,

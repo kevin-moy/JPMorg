@@ -25,6 +25,7 @@
     self.launchDateLabel.text = [NSString stringWithFormat:@"Launch Date: %@", launch.date];
     self.rocketNameLabel.text = [NSString stringWithFormat:@"Rocket Name: %@", launch.rocket.name];
     self.rocketTypeLabel.text = [NSString stringWithFormat:@"Rocket Type: %@", launch.rocket.type];
+    self.payloadIDLabel.text = [NSString stringWithFormat:@"Payload ID: %@", launch.rocket.payloadID];
 }
 
 @end

@@ -17,5 +17,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *launchDateLabel;
 @property (weak, nonatomic) IBOutlet UILabel *rocketNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *rocketTypeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *payloadIDLabel;
 @property (nonatomic, strong) Launch *launch;
 @end
