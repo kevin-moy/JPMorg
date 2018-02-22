@@ -23,6 +23,7 @@
 
 @implementation ViewController
 
+  // I am using MVC model since it isn't a very complex app and can make fast iterations. If the app adds more features and views, I would probably switch to a MVVM model.
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.datasourceArray = [NSMutableArray array];
@@ -31,6 +32,7 @@
     [self getUpcomingLaunches:nil forStartDateFilter:nil andEndDateFilter:nil];
 }
 
+ // API Call
 -(void)getUpcomingLaunches: (NSString *)launchFilter forStartDateFilter: (NSString *)startDateFilter andEndDateFilter: (NSString *) endDateFilter {
     [self.datasourceArray removeAllObjects];
     NSString *urlString = BASE_URL;
@@ -64,7 +66,7 @@
         [self noConnectionAlert];
     }];
 }
-
+// Alerts
 - (void)noConnectionAlert {
     UIAlertController *alert = [UIAlertController
                                  alertControllerWithTitle:@"Error"
@@ -109,6 +111,7 @@
     return self.datasourceArray.count;
 }
 
+#pragma mark - Button Actions
 - (IBAction)filterButtonPressed:(UIBarButtonItem *)sender {
     [self.navigationController setNavigationBarHidden:true animated:true];
     self.filterView.alpha = 1;

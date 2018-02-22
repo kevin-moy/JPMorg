@@ -199,7 +199,7 @@
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="ASCIICapableNumberPad" returnKeyType="go" enablesReturnKeyAutomatically="YES"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="go" enablesReturnKeyAutomatically="YES"/>
                                         <connections>
                                             <action selector="launchYearFilterChanged:" destination="B4T-yX-Uro" eventType="editingChanged" id="kbE-LI-2Tp"/>
                                             <outlet property="delegate" destination="B4T-yX-Uro" id="XHM-av-i2A"/>
