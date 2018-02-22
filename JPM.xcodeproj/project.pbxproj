@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A4DF8FB203E39CD00C9DA75 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4DF8FA203E39CD00C9DA75 /* Constants.m */; };
+		0A4DF900203E41E300C9DA75 /* LaunchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4DF8FF203E41E300C9DA75 /* LaunchCell.m */; };
+		0A4DF906203E8BE200C9DA75 /* NSString+DateString.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4DF905203E8BE200C9DA75 /* NSString+DateString.m */; };
 		0AC35548203CFD890039CCD4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC35547203CFD890039CCD4 /* AppDelegate.m */; };
 		0AC3554B203CFD890039CCD4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC3554A203CFD890039CCD4 /* ViewController.m */; };
 		0AC35550203CFD890039CCD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AC3554F203CFD890039CCD4 /* Assets.xcassets */; };
@@ -17,7 +20,6 @@
 		0AC35579203CFDA70039CCD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AC35578203CFDA60039CCD4 /* Main.storyboard */; };
 		0AC35582203D01720039CCD4 /* Launch.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC35581203D01720039CCD4 /* Launch.m */; };
 		0AC35585203D05ED0039CCD4 /* Rocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC35584203D05ED0039CCD4 /* Rocket.m */; };
-		0AC35588203E2BB20039CCD4 /* ApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC35587203E2BB20039CCD4 /* ApiManager.m */; };
 		2AF642675D39E1681E3B6800 /* libPods-JPM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9044AD058BEB8D39560BD05 /* libPods-JPM.a */; };
 		3DA617D5A0C58FB815EFB301 /* libPods-JPMUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A930B3916FAA4190E060423 /* libPods-JPMUITests.a */; };
 		CEA6C823ADFA4BF8367999EF /* libPods-JPMTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3699178AB6174BD564E550A7 /* libPods-JPMTests.a */; };
@@ -41,6 +43,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A4DF8FA203E39CD00C9DA75 /* Constants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		0A4DF8FE203E41E300C9DA75 /* LaunchCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchCell.h; sourceTree = "<group>"; };
+		0A4DF8FF203E41E300C9DA75 /* LaunchCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaunchCell.m; sourceTree = "<group>"; };
+		0A4DF904203E8BE200C9DA75 /* NSString+DateString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+DateString.h"; sourceTree = "<group>"; };
+		0A4DF905203E8BE200C9DA75 /* NSString+DateString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+DateString.m"; sourceTree = "<group>"; };
 		0A930B3916FAA4190E060423 /* libPods-JPMUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JPMUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AC35543203CFD890039CCD4 /* JPM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JPM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AC35546203CFD890039CCD4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -62,8 +69,6 @@
 		0AC35581203D01720039CCD4 /* Launch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Launch.m; sourceTree = "<group>"; };
 		0AC35583203D05ED0039CCD4 /* Rocket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Rocket.h; sourceTree = "<group>"; };
 		0AC35584203D05ED0039CCD4 /* Rocket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Rocket.m; sourceTree = "<group>"; };
-		0AC35586203E2BB20039CCD4 /* ApiManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApiManager.h; sourceTree = "<group>"; };
-		0AC35587203E2BB20039CCD4 /* ApiManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApiManager.m; sourceTree = "<group>"; };
 		3699178AB6174BD564E550A7 /* libPods-JPMTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JPMTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		384562D5BCC573BE835FD220 /* Pods-JPMUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JPMUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JPMUITests/Pods-JPMUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3CA78933E1C339B5DF146118 /* Pods-JPMUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JPMUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JPMUITests/Pods-JPMUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -102,6 +107,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A4DF907203E8DCF00C9DA75 /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				0AC35580203D01720039CCD4 /* Launch.h */,
+				0AC35581203D01720039CCD4 /* Launch.m */,
+				0AC35583203D05ED0039CCD4 /* Rocket.h */,
+				0AC35584203D05ED0039CCD4 /* Rocket.m */,
+			);
+			path = Object;
+			sourceTree = "<group>";
+		};
+		0A4DF908203E8DEF00C9DA75 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0AC35549203CFD890039CCD4 /* ViewController.h */,
+				0AC3554A203CFD890039CCD4 /* ViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0A4DF909203E8E0500C9DA75 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0A4DF904203E8BE200C9DA75 /* NSString+DateString.h */,
+				0A4DF905203E8BE200C9DA75 /* NSString+DateString.m */,
+				0A4DF8FA203E39CD00C9DA75 /* Constants.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		0AC3553A203CFD890039CCD4 = {
 			isa = PBXGroup;
 			children = (
@@ -129,14 +164,11 @@
 			children = (
 				0AC35546203CFD890039CCD4 /* AppDelegate.h */,
 				0AC35547203CFD890039CCD4 /* AppDelegate.m */,
-				0AC35586203E2BB20039CCD4 /* ApiManager.h */,
-				0AC35587203E2BB20039CCD4 /* ApiManager.m */,
-				0AC35549203CFD890039CCD4 /* ViewController.h */,
-				0AC3554A203CFD890039CCD4 /* ViewController.m */,
-				0AC35580203D01720039CCD4 /* Launch.h */,
-				0AC35581203D01720039CCD4 /* Launch.m */,
-				0AC35583203D05ED0039CCD4 /* Rocket.h */,
-				0AC35584203D05ED0039CCD4 /* Rocket.m */,
+				0A4DF8FE203E41E300C9DA75 /* LaunchCell.h */,
+				0A4DF8FF203E41E300C9DA75 /* LaunchCell.m */,
+				0A4DF908203E8DEF00C9DA75 /* ViewControllers */,
+				0A4DF907203E8DCF00C9DA75 /* Object */,
+				0A4DF909203E8E0500C9DA75 /* Utils */,
 				0AC35578203CFDA60039CCD4 /* Main.storyboard */,
 				0AC3554F203CFD890039CCD4 /* Assets.xcassets */,
 				0AC35551203CFD890039CCD4 /* LaunchScreen.storyboard */,
@@ -478,9 +510,11 @@
 			files = (
 				0AC35585203D05ED0039CCD4 /* Rocket.m in Sources */,
 				0AC3554B203CFD890039CCD4 /* ViewController.m in Sources */,
-				0AC35588203E2BB20039CCD4 /* ApiManager.m in Sources */,
+				0A4DF900203E41E300C9DA75 /* LaunchCell.m in Sources */,
 				0AC35556203CFD8A0039CCD4 /* main.m in Sources */,
 				0AC35548203CFD890039CCD4 /* AppDelegate.m in Sources */,
+				0A4DF8FB203E39CD00C9DA75 /* Constants.m in Sources */,
+				0A4DF906203E8BE200C9DA75 /* NSString+DateString.m in Sources */,
 				0AC35582203D01720039CCD4 /* Launch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
