@@ -16,6 +16,8 @@
     if (self) {
         self.name = [data objectForKey:@"rocket_name"];
         self.type = [data objectForKey:@"rocket_type"];
+        NSArray *payload = [data objectForKey:@"second_stage"][@"payloads"];
+        self.payloadID = [[payload valueForKey:@"payload_id"] firstObject];
     }
     return self;
 }

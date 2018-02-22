@@ -14,6 +14,6 @@
 
 @property (strong, nonatomic) NSString *name;
 @property (strong, nonatomic) NSString *type;
-@property (strong, nonatomic) NSString *payload;
+@property (strong, nonatomic) NSString *payloadID;
 
 @end
