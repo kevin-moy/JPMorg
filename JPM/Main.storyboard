@@ -179,14 +179,14 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="30" translatesAutoresizingMaskIntoConstraints="NO" id="lsX-Hp-JPF">
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="30" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lsX-Hp-JPF">
                                         <rect key="frame" x="125" y="282" width="250" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="PhD-4f-oab"/>
                                             <constraint firstAttribute="height" constant="60" id="pdU-xd-7Gy"/>
                                         </constraints>
-                                        <date key="date" timeIntervalSinceReferenceDate="540202387.92592204">
-                                            <!--2018-02-13 08:13:07 +0000-->
+                                        <date key="date" timeIntervalSinceReferenceDate="542617987.92592204">
+                                            <!--2018-03-13 07:13:07 +0000-->
                                         </date>
                                         <connections>
                                             <action selector="endDateChanged:" destination="B4T-yX-Uro" eventType="valueChanged" id="ilw-Tl-2UV"/>

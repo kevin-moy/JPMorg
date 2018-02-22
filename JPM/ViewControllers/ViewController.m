@@ -115,6 +115,9 @@
 - (IBAction)filterButtonPressed:(UIBarButtonItem *)sender {
     [self.navigationController setNavigationBarHidden:true animated:true];
     self.filterView.alpha = 1;
+    // Set default filters
+    self.startDateFilter = [NSString stringWithFormat:@"2018-02-21"];
+    self.endDateFilter = [NSString stringWithFormat:@"2018-03-13"];
 }
 
 - (IBAction)cancelButtonPressed:(UIBarButtonItem *)sender {
