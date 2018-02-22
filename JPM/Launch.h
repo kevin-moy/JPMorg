@@ -17,9 +17,6 @@
 @property (nonatomic) double flightNumber;
 @property (strong, nonatomic) NSString *site;
 @property (strong, nonatomic) NSString *date;
-@property (strong
-           
-           
-           , nonatomic) Rocket *rocket;
+@property (strong, nonatomic) Rocket *rocket;
 
 @end

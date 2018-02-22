@@ -7,7 +7,7 @@
 //
 
 #import "Launch.h"
-
+#import "NSString+DateString.h"
 @implementation Launch
 
 -(id)initWithData:(NSDictionary *)data {
@@ -16,14 +16,11 @@
     if (self) {
         self.flightNumber = [[data objectForKey:@"flight_number"] doubleValue];
         self.year = [data objectForKey:@"launch_year"];
-        self.site = [data objectForKey:@"launch_site"];
-        self.date = [data objectForKey:@"launc_date_utc"];
-        
-        NSArray *rocketData = [data objectForKey:@"rocket"];
-        
-       // for (NSDictionary *rocketData in rocketData) {
-            self.rocket = [[Rocket alloc] initWithData:rocketData];
-        //}
+        self.site = [data objectForKey:@"launch_site"][@"site_name"];
+        self.date = [data objectForKey:@"launch_date_utc"];
+        self.date = [self.date convertDateToShort:self.date];
+        NSDictionary *rocketData = [data objectForKey:@"rocket"];
+        self.rocket = [[Rocket alloc] initWithData:rocketData];
     }
     return self;
 }
